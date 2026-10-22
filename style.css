@@ -89,7 +89,46 @@ textarea{min-height:120px;resize:vertical}
   }
 }
 
+@media (max-width: 768px){
+  .section-about .container {
+    display:flex;
+    flex-direction: column;
+  }
+.aside{
+  width:100%;
+  margin-bottom: 20px;
+}
+}
 
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .footer-grid img {
+        margin: 0 auto; 
+    }
+}
 /* МОБИЛЬНЫЕ СТИЛИ НАМЕРЕННО ОТСУТСТВУЮТ.
    Проект предназначен для практической по адаптивной верстке. */
 
