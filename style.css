@@ -49,3 +49,89 @@ textarea{min-height:120px;resize:vertical}
 
 /* МОБИЛЬНЫЕ СТИЛИ НАМЕРЕННО ОТСУТСТВУЮТ.
    Проект предназначен для практической по адаптивной верстке. */
+
+@media (max-width: 768px) {
+  /* 1. Контейнер становится резиновым */
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .hero-grid,
+  .cards,
+  .stats,
+  .course-layout,
+  .course-list,
+  .team-grid,
+  .footer-grid,
+  .about-layout,
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .feature-row,
+  .form-row,
+  .hero-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feature {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+  .page-hero h1 {
+    font-size: 32px;
+  }
+  .section-title {
+    font-size: 28px;
+  }
+  .hero p {
+    font-size: 17px;
+  }
+
+  .header-inner {
+    height: auto;
+    padding: 15px 0;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .main-nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .schedule {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+  .hero {
+    padding: 40px 0;
+  }
+  .page-hero {
+    padding: 30px 0 20px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
